@@ -1,4 +1,4 @@
-FROM sonarsource/sonar-scanner-cli:4.8
+FROM bedinotom/sonar-cube-cli:arm64
 
 LABEL version="1.2.0" \
       repository="https://github.com/sonarsource/sonarqube-scan-action" \
