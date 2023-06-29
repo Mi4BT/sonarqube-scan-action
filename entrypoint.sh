@@ -18,6 +18,7 @@ if [[ -d "/opt/sonar-scanner/.sonar/cache" ]]; then
   echo "============================ WARNING ============================"
   echo "THERE IS CACH 3E"
   echo "============================ WARNING ============================"
+  rm -r /opt/sonar-scanner/.sonar/cache
 fi
 
 if [[ -z "${SONAR_TOKEN}" ]]; then
