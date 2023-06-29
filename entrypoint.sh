@@ -2,6 +2,12 @@
 
 set -e
 
+if [[ -d "/opt/.sonar"]]; then
+  echo "============================ WARNING ============================"
+  echo "THERE IS CACHE"
+  echo "============================ WARNING ============================"
+fi
+
 if [[ -z "${SONAR_TOKEN}" ]]; then
   echo "============================ WARNING ============================"
   echo "Running this GitHub Action without SONAR_TOKEN is not recommended"
