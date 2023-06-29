@@ -2,9 +2,21 @@
 
 set -e
 
-if [[ -d "/opt/.sonar" ]]; then
+if [[ -d "/opt/sonar-scanner" ]]; then
   echo "============================ WARNING ============================"
-  echo "THERE IS CACHE"
+  echo "THERE IS CACHE 1"
+  echo "============================ WARNING ============================"
+fi
+
+if [[ -d "/opt/sonar-scanner/.sonar" ]]; then
+  echo "============================ WARNING ============================"
+  echo "THERE IS CACHE 2"
+  echo "============================ WARNING ============================"
+fi
+
+if [[ -d "/opt/sonar-scanner/.sonar/cache" ]]; then
+  echo "============================ WARNING ============================"
+  echo "THERE IS CACH 3E"
   echo "============================ WARNING ============================"
 fi
 
