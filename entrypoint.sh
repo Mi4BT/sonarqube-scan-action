@@ -2,7 +2,7 @@
 
 set -e
 
-if [[ -d "/opt/.sonar"]]; then
+if [[ -d "/opt/.sonar" ]]; then
   echo "============================ WARNING ============================"
   echo "THERE IS CACHE"
   echo "============================ WARNING ============================"
